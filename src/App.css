@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #88895b;
+}
+
+/* Main app container */
+.app {
+  max-width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Header styling */
+.app-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+/* Main content styling */
+.app-main {
+  padding: 20px;
+}
+
+/* Footer styling */
+.app-footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #333;
+}
+
+.app-footer p {
+  margin: 0;
+}
+
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Top section with select and buttons */
+.top {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Wrapper for left and right sides */
+.wrapper {
+  width: 95%;
+  display: flex;
+}
+
+/* Styling for both the left and right sides */
+.left-side,
+.right-side {
+  flex: 1;
+}
+
+.left-side {
+  margin-right: 10px;
+}
+
+.right-side {
+  margin-left: 10px;
+}
+
+/* Textareas */
+textarea {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+  min-height: 400px;
+}
+
+/* Error message */
+.error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+/* Loader styling */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #333;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader::after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  border-top: 2px solid transparent;
+  animation: spin 1s linear infinite;
+}
